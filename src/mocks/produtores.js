@@ -5,11 +5,11 @@ import potager from '../assets/produtores/potager.png';
 import jenny from '../assets/produtores/jenny-jack.png';
 
 const gerarNum = (min, max) => {
-  return Math.floor(Math.random(max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 const produtores = {
-  titulo: 'JABKJSDBNAJK',
+  titulo: 'Produtores',
   lista: [
     {
       nome: 'Green',

@@ -1,13 +1,19 @@
 import React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {StyleSheet, SafeAreaView} from 'react-native';
 import Home from './src/telas/Home';
 
 function App() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={estilo.tela}>
       <Home />
     </SafeAreaView>
   );
 }
 
 export default App;
+
+const estilo = StyleSheet.create({
+  tela: {
+    flex: 1,
+  },
+});
